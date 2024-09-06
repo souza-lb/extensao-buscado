@@ -19,7 +19,7 @@ import java.util.*;
 // Serviço de notificação via Telegram e E-Mail
 public class NotificationSenderService {
 		
-    @SuppressWarnings({ "deprecation" })
+    @SuppressWarnings({ })
 	public static void enviarMensagemTelegram(String mensagem, String caminhoArquivo, String token, String chatId) {
     	
     	try {
