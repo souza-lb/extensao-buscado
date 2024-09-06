@@ -9,6 +9,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
+		<!-- Definição da codificação utilizada no projeto -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
 		<!-- Definindo a versão do Java -->
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
