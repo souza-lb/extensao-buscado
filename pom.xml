@@ -9,8 +9,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		
-		<!-- Definindo a versão do Java -->
+
+		<!-- Definição da codificação utilizada no projeto -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Definição da versão Java utilizada no projeto -->
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
@@ -77,8 +80,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Main-Class>br.com.leonardo.Main</Main-Class> <!--
-							Substitua pelo seu ponto de entrada principal -->
+							<Main-Class>br.com.leonardo.Main</Main-Class>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -93,8 +95,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>br.com.leonardo.Main</mainClass> <!--
-							Substitua pelo seu ponto de entrada principal -->
+							<mainClass>br.com.leonardo.Main</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
@@ -112,7 +113,7 @@
 				</executions>
 			</plugin>
 
-			<!-- Plugin para incluir arquivos adicionais no JAR, se necessário -->
+			<!-- Plugin para inclusão de arquivos adicionais -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -130,8 +131,7 @@
 								<resource>
 									<directory>${basedir}/src/main/resources</directory>
 									<includes>
-										<include>**/*.env</include> <!-- Inclua
-										seu arquivo .env aqui -->
+										<include>**/*.env</include>
 									</includes>
 								</resource>
 							</resources>
