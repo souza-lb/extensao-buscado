@@ -17,7 +17,7 @@ public class LoggerManager {
         }
 
         try {
-            FileHandler fileHandler = new FileHandler("./log/app.log", true);
+            FileHandler fileHandler = new FileHandler("./log/buscado.log", true);
             fileHandler.setFormatter(new SimpleFormatter());
             logger.addHandler(fileHandler);
         } catch (IOException e) {
