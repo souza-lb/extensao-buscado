@@ -14,8 +14,7 @@ public class FileManager {
 
     public static String baixarPDF(String pdfUrl) {
         try {
-            @SuppressWarnings("deprecation")
-			URL url = new URL(pdfUrl);
+            URL url = new URL(pdfUrl);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
@@ -34,8 +33,7 @@ public class FileManager {
         }
     }
 
-    @SuppressWarnings("deprecation")
-	public static void abrirPDF(String caminhoArquivo) {
+    public static void abrirPDF(String caminhoArquivo) {
         try {
             if (System.getProperty("os.name").startsWith("Windows")) {
                 Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + caminhoArquivo);
