@@ -1,5 +1,9 @@
 <h1 align=center>Projeto de Extensão BuscaDO</h1>
 
+<b>Projeto de Extensão da Disciplina Java OO - Leonardo Bruno de Souza Silva - 202301011744 - Arquivos da Aplicação.</b>
+
+<b>Repositório Pricipal do Projeto BuscaDO</b>
+
 <b>Ambiente de desenvolvimento básico do projeto com a utilização do OpenJDK17, Maven, GeckoDriver e Docker (opcional)</b>
 
 Este repositório fornece:
