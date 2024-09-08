@@ -114,7 +114,7 @@ O software utilizará o seu visualizador de arquivos "PDF" padrão.
 
 Em alguns instantes você receberá sua notificação por Telegram conforme abaixo:  
 
-![Notificação Telegram](/imagens/notificacao-telegram.png)  
+![Notificação Telegram](./imagens/notificacao_telegram.png)
 
 
 Em seguinda você receberá sua notificação por E-Mail conforme abaixo:  
