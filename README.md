@@ -114,7 +114,7 @@ O software utilizará o seu visualizador de arquivos "PDF" padrão.
 
 Em alguns instantes você receberá sua notificação por Telegram conforme abaixo:  
 
-![Notificação Telegram](./imagens/notificacao_telegram.png)
+![Notificação Telegram](/imagens/notificacao-telegram.png)
 
 
 Em seguinda você receberá sua notificação por E-Mail conforme abaixo:  
@@ -183,14 +183,6 @@ Esta classe concentra as principais funções da aplicação. Nela você define 
 Seu programa já está funcionando:  
 
 ![Janela Eclipse rodando](/imagens/classe-main-eclipse-rodando.png)  
-
-
-
-
-
-
-
-
 
 
 Este repositório foi criado por: <b>Leonardo Bruno de Souza Silva</b><br>
