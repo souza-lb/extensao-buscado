@@ -48,7 +48,6 @@ extensao-buscado-docker ( repositório com arquivos docker para construção do 
 git clone https://github.com/souza-lb/extensao-buscado-docker.git
 ```
 
-
 Dentro da pasta do primeiro repositório que você encontra:  
 
 ![Pasta repositório extensão-buscado-main](/imagens/pasta-extensao-buscado-main.png)  
@@ -126,8 +125,11 @@ Em seguinda você receberá sua notificação por E-Mail conforme abaixo:
 ![Notificação E-Mail](/imagens/notificacao-email.png)  
 
 
+<h2>Como rodar o projeto utilizando o Docker ?</h2>  
 
-<h2>Como rodar o projeto utilizando o Docker ?</h2>
+Com a vantagem de não necessitar de alterações significativas no sistema host.<p>
+A imagem utilizada no contêiner docker encapsula todas as dependências da aplicação.  
+
 
 Realize as etapas anteriores incluindo o passo para gerar o arquivo "jar"
 
@@ -138,6 +140,12 @@ Copie o seu "fat jar" para a pasta conforme abaixo:
 ![Pasta repositório extensão-buscado-docker-main](/imagens/pasta-extensao-buscado-docker-main.png)  
 
 Abra um terminal na pasta raiz do repositorio que você clonou e adicionou o arquivo "jar".
+
+Dê a permissão para que o conteiner tenha acesso aos recursos gráficos do X11 ( Para Windows consulte a ajudo do seu sistema ):
+
+```bash
+$ xhost +local:docker
+```
 
 Para criar a imagem docker execute neste terminal:  
 
@@ -156,7 +164,7 @@ Agora execute no terminal:
 ```bash
 $ sudo docker-compose up
 ```
-Você também pode rodar o comando acima com o parâmetro -d como resultado seu terminal fica livre
+Você também pode rodar o comando acima com o parâmetro -d como resultado seu terminal fica livre:
 
 ```bash
 $ sudo docker-compose up -d
@@ -167,6 +175,12 @@ Você receberá uma saída conforme abaixo:
 ![Saída comando docker-compose up](/imagens/docker-compose-up.png)  
 
 Neste ponto seu sóftware já está rodando. Em alguns segundo a janela de notificação abrirá.
+
+Ao final do uso remova a permissão concedida anteriormene com:
+
+```bash
+$ xhost -local:docker
+```
 
 <h2>Como rodar o projeto usando o IDE Eclipse ?</h2>
 
