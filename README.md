@@ -202,6 +202,21 @@ Seu programa já está funcionando:
 
 ![Janela Eclipse rodando](/imagens/classe-main-eclipse-rodando.png)  
 
+<h2>Solução de Problemas</h2>  
+
+A aplicação utiliza um sistema de log para facilitar a solução de problemas. Consulte a pasta  
+"log" na raiz do projeto. Verifique o arquivo de "buscado.log" nos techos que apresentarem a ocorrência  
+"ERRO". Ao lado da ocorrência será fornecida uma descrição do erro apresentado.  
+
+<h3>Erros Frequentes</h3>
+
+* Biblioteca Selenium não localiza o "geckodriver". (Solucção: Obtenha o arquivo "geckodriver" adequado para seu S.O" e coloque na pasta "gecko").
+* Biblioteca Selenium não consegue acesso ao "geckodriver". (Solução: Conceda a permissão adequada com "$ chmod +x geckodriver").
+* Erro biblioteca DotEnv. (Solução: Certifique que o arquivo ".env" está na pasta "/src/main/env/" e está corretamente editado).
+* Erro ao rodar "mvn package". (Solução: Certifique que possui instalado o Apache Maven com "$ sudo apt install maven").
+* Java não localizado. (Solução: Cetifique que possui o OpenJDK 17 ou superior instalado com "$ sudo apt install openjdk-17-jdk").
+
+
 
 Este repositório foi criado por: <b>Leonardo Bruno de Souza Silva</b><br>
 <b>Matrícula 202301011744</b><br>
