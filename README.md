@@ -10,8 +10,6 @@ Este repositório fornece:
 
 * pom.xml: Permite a construção do projeto utilizando o maven.
 
-* /gecko: Fornece o GeckoDriver padrão utilizado no projeto ( Linux 64bits ).
-
 * /src: Códigos de todas as classe Java do projeto.
 
 * README.md: Estas instruções que você encontra abaixo.
@@ -91,13 +89,6 @@ Agora acesse a nova pasta "target", nela você encontrar os arquivos "jar" do pr
 ![Pasta target](/imagens/pasta-target.png)  
 
 Copie o arquivo "extensao-buscado-1.0.0-jar-with-dependencies.jar" para uma pasta de sua preferência.  
-Copie a pasta "/gecko" para o mesmo local que você copiou o arquivo "jar"
-
-Dê permissão de execução para o arquivo "geckodriver" dentro da pasta "/gecko".  
-
-```bash
-chmod +x geckodriver
-```
 
 Para iniciar o programa execute no terminal:  
 
@@ -210,8 +201,6 @@ A aplicação utiliza um sistema de log para facilitar a solução de problemas.
 
 <h3>Erros Frequentes</h3>
 
-* Biblioteca Selenium não localiza o "geckodriver". (Solucção: Obtenha o arquivo "geckodriver" adequado para seu S.O" e coloque na pasta "gecko").
-* Biblioteca Selenium não consegue acesso ao "geckodriver". (Solução: Conceda a permissão adequada com "$ chmod +x geckodriver").
 * Erro biblioteca DotEnv. (Solução: Certifique que o arquivo ".env" está na pasta "/src/main/env/" e está corretamente editado).
 * Erro ao rodar "mvn package". (Solução: Certifique que possui instalado o Apache Maven com "$ sudo apt install maven").
 * Java não localizado. (Solução: Cetifique que possui o OpenJDK 17 ou superior instalado com "$ sudo apt install openjdk-17-jdk").
