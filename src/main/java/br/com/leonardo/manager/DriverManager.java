@@ -1,16 +1,19 @@
 package br.com.leonardo.manager;
 
-// Fornece Driver para uso no Main e WebScrapper
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverManager {
     public static WebDriver setupDriver() {
-        System.setProperty("webdriver.gecko.driver", "./gecko/geckodriver");
+        // Utiliza o WebDriverManager na gestão do driver.
+        WebDriverManager.firefoxdriver().setup();
+        
         FirefoxOptions options = new FirefoxOptions();
-        // Habilita a função headless - não exibe tela do navegador.
+        // Habilita a opção headless para não exibir tela do navegador.
         options.setHeadless(true);
-       return new FirefoxDriver(options);
+        
+        return new FirefoxDriver(options);
     }
 }
