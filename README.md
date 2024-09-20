@@ -19,7 +19,7 @@ Para criar o ambiente você vai precisar basicamente de:
 * GNU Linux Debian 12.7.0
 * OpenJDK17
 * Apache Maven 3.8.7 ( ou superior )
-* Gecko Driver Linux amd64 ( já incluído no repositório )
+* Gecko Driver Linux amd64 ( Obtenção automática com DriverManager - Mudança implementada )
 * Git 2.39.2 ( ou superior) opcional
 * Docker 20.10.24 ( ou superior - opcional ) opcional
 
