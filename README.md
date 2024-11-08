@@ -68,7 +68,7 @@ Insira seus dados salve o arquivo e retorna a pasta raiz. Vamos iniciar o proces
 Execute agora :
 
 ```bash
-sudo mvn clean
+mvn clean
 ```
 Se tudo der certo você receberá esta saída:  
 
@@ -77,7 +77,7 @@ Se tudo der certo você receberá esta saída:
 Execute agora :
 
 ```bash
-sudo mvn package
+mvn package
 ```
 
 Se tudo ocorrer como esperado você receberá esta saída:  
